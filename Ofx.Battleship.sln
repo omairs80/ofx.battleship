@@ -26,6 +26,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ofx.Battleship.Domain", "Of
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ofx.Battleship.Application", "Ofx.Battleship.Application\Ofx.Battleship.Application.csproj", "{9FA0E9CD-76B3-472B-AEED-E27C7282E258}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{892A2301-B52C-4DF4-AAFE-000CCAE08E24}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ofx.Battleship.Domain.Test", "Ofx.Battleship.Domain.Test\Ofx.Battleship.Domain.Test.csproj", "{65F69E36-9A88-46E7-A140-953D2AD8E3EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +60,10 @@ Global
 		{9FA0E9CD-76B3-472B-AEED-E27C7282E258}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FA0E9CD-76B3-472B-AEED-E27C7282E258}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FA0E9CD-76B3-472B-AEED-E27C7282E258}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65F69E36-9A88-46E7-A140-953D2AD8E3EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65F69E36-9A88-46E7-A140-953D2AD8E3EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65F69E36-9A88-46E7-A140-953D2AD8E3EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65F69E36-9A88-46E7-A140-953D2AD8E3EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +71,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D89C6517-0CF7-4615-ABE0-8AD9B23632D9} = {2B14D8C2-4E01-4598-BA8F-AD40D4BE8875}
 		{AF212601-C84D-4A6A-A4CB-59D373B5F261} = {7E7D83BC-80A4-4E18-BB8A-8751C4963DDF}
+		{65F69E36-9A88-46E7-A140-953D2AD8E3EC} = {892A2301-B52C-4DF4-AAFE-000CCAE08E24}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8573A7C9-8CD3-47D7-8579-3F1E714AE278}

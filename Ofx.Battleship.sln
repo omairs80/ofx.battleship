@@ -3,16 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ofx.Battleship.Api", "Ofx.Battleship.Api\Ofx.Battleship.Api.csproj", "{C0198BF8-F02D-4DE2-BF6A-C130552D75C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ofx.Battleship.Api", "Ofx.Battleship.Api\Ofx.Battleship.Api.csproj", "{C0198BF8-F02D-4DE2-BF6A-C130552D75C7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapters", "Adapters", "{2B14D8C2-4E01-4598-BA8F-AD40D4BE8875}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ofx.Battleship.Controller", "Ofx.Battleship.Controller\Ofx.Battleship.Controller.csproj", "{D89C6517-0CF7-4615-ABE0-8AD9B23632D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ofx.Battleship.Controller", "Ofx.Battleship.Controller\Ofx.Battleship.Controller.csproj", "{D89C6517-0CF7-4615-ABE0-8AD9B23632D9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{94441AA1-FEA0-4E52-AC69-4910AED54B09}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.targets = Directory.Build.targets
 		Packages.targets = Packages.targets
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ofx.Battleship.Common", "Ofx.Battleship.Common\Ofx.Battleship.Common.csproj", "{AF212601-C84D-4A6A-A4CB-59D373B5F261}"

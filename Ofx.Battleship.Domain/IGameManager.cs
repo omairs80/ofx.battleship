@@ -7,5 +7,7 @@ namespace Ofx.Battleship.Domain
         Board CreateBoard(int playerId);
 
         Board GetBoard(int playerId);
+
+        void DeleteBoard(int playerId);
     }
 }

@@ -57,7 +57,8 @@ namespace Ofx.Battleship.Domain.Test
             // Act & Assert
             var board = Board.CreateBoard(playerId);
             board.AddBattleShip(battleShip);
-            Assert.Throws<BoardPositionAlreadyOccupiedException>(() => board.AddBattleShip(battleShip2));
+            Assert.Throws<BoardPositionAlreadyOccupiedException>(() => board.AddBattleShip(battleShip2),
+                "Cannot add battle ship the area that it will occupy already overlaps with another ship");
         }
 
         [Test]

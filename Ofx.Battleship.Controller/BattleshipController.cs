@@ -25,7 +25,6 @@ namespace Ofx.Battleship.Controller
         [HttpPost("{playerId}/board")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status409Conflict)]
-        // Todo: Validation
         public Task CreateBoard(int playerId, CancellationToken cancellationToken)
         {
             var command = new CreateBoardCommand(playerId);
@@ -51,6 +50,15 @@ namespace Ofx.Battleship.Controller
         {
             var command = _mapper.Map<AttackBattleShipCommand>(request);
             command.PlayerId = playerId;
+            return _mediator.Send(command, cancellationToken);
+        }
+
+        [HttpDelete("{playerId}/board")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public Task DeleteBoard(int playerId, CancellationToken cancellationToken)
+        {
+            var command = new DeleteBoardCommand(playerId);
             return _mediator.Send(command, cancellationToken);
         }
     }

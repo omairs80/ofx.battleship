@@ -32,7 +32,8 @@ namespace Ofx.Battleship.Domain.Test
         public void CreateCoordinate_Should_Throw_InvalidCoordinateException(int row, int column)
         {
             // Act & Assert
-            Assert.Throws<InvalidCoordinateException>(() => Coordinate.CreateCoordinate(row, column));
+            Assert.Throws<InvalidCoordinateException>(() => Coordinate.CreateCoordinate(row, column),
+                $"Coordinate values of ({row}, {column}) are not valid. Values should be 1 - 10");
         }
 
         [Test]

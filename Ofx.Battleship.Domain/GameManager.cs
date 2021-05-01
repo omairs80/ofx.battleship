@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections.Concurrent;
+using System.Collections.Generic;
 using Ofx.Battleship.Domain.Entities;
 using Ofx.Battleship.Domain.Exceptions;
 
@@ -10,7 +11,7 @@ namespace Ofx.Battleship.Domain
 
         public GameManager()
         {
-            _boards = new Dictionary<int, Board>();
+            _boards = new ConcurrentDictionary<int, Board>();
         }
 
         public Board CreateBoard(int playerId)
@@ -34,6 +35,12 @@ namespace Ofx.Battleship.Domain
             }
 
             return _boards[playerId];
+        }
+
+        public void DeleteBoard(int playerId)
+        {
+            var board = GetBoard(playerId);
+            _boards.Remove(board.PlayerId);
         }
     }
 }

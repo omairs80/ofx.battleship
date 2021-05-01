@@ -10,7 +10,7 @@ using Ofx.Battleship.Contract.Requests;
 namespace Ofx.Battleship.Controller
 {
     [ApiController]
-    [Route("ofx/[controller]")]
+    [Route("api/[controller]")]
     public class BattleshipController : ControllerBase
     {
         private readonly IMediator _mediator;

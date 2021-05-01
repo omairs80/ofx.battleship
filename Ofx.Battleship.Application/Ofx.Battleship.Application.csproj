@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ofx.Battleship.Common\Ofx.Battleship.Common.csproj" />
+    <ProjectReference Include="..\Ofx.Battleship.Contract\Ofx.Battleship.Contract.csproj" />
+    <ProjectReference Include="..\Ofx.Battleship.Domain\Ofx.Battleship.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

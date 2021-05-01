@@ -32,8 +32,6 @@ namespace Ofx.Battleship.Controller
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ofx.Battleship.Api", Version = "v1" });
-                var xmlPath = Path.Combine(AppContext.BaseDirectory, "Ofx.Battleship.Api.xml");
-                c.IncludeXmlComments(xmlPath);
             });
 
             services.AddSingleton<IConfigureOptions<MvcOptions>, ConfigureMvcOptions>();

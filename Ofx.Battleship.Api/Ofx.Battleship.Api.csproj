@@ -4,14 +4,6 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\work\research\ofx.battleship\Ofx.Battleship.Api\Ofx.Battleship.Api.xml</DocumentationFile>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>C:\work\research\ofx.battleship\Ofx.Battleship.Api\Ofx.Battleship.Api.xml</DocumentationFile>
-  </PropertyGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\Ofx.Battleship.Controller\Ofx.Battleship.Controller.csproj" />
   </ItemGroup>
